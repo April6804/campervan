@@ -1,0 +1,47 @@
+body{
+  margin:0;
+  padding:0;
+  font-family:  'Open Sans', helvetica,arial,sans-serif;
+}
+nav ul{
+  width:100%;
+  text-align: center;
+  background:rgba(0, 0, 0, 0.5);
+  margin:0;
+  padding:0;
+}
+nav li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 20px 0;
+  min-width:100px;
+}
+nav a{
+  color:white;
+  text-decoration: none;
+  display: block;
+  font-weight: lighter;
+}
+#hero{
+  background:
+  linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+      ),
+  url('img/Alan-Caldwell-Pexels.jpg');
+  background-size:cover;
+  background-position: center center;
+  height:100vh;
+}
+#hero-overlay{
+  text-align: center;
+  height:100%;
+}
+#hero-overlay p{
+  color:white;
+  position: relative;
+  top: 7%;
+  font-size: 4em;
+  font-weight: 100;
+  line-height:1em;
+}
