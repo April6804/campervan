@@ -1,47 +1,102 @@
 body{
   margin:0;
   padding:0;
-  font-family:  'Open Sans', helvetica,arial,sans-serif;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 nav ul{
   width:100%;
   text-align: center;
-  background:rgba(0, 0, 0, 0.5);
+  background:rgba(0, 0, 0, 0.4);
   margin:0;
   padding:0;
 }
 nav li{
-  display: inline-block;
   list-style-type: none;
-  padding: 20px 0;
-  min-width:100px;
+  padding: 15px 0;
 }
 nav a{
   color:white;
   text-decoration: none;
   display: block;
-  font-weight: lighter;
 }
 #hero{
   background:
-  linear-gradient(
+  /*linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0)
-      ),
+      ),*/
   url('img/Alan-Caldwell-Pexels.jpg');
   background-size:cover;
   background-position: center center;
-  height:100vh;
+  height:570px;
 }
 #hero-overlay{
-  text-align: center;
-  height:100%;
-}
-#hero-overlay p{
-  color:white;
+  text-align: right;
+  margin-right:12%;
   position: relative;
-  top: 7%;
-  font-size: 4em;
+  top: 2%;
+}
+#hero-overlay h1,
+#hero-overlay h2{
+  /* Adding shadow */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+  color:white;
   font-weight: 100;
-  line-height:1em;
+}
+#hero-overlay h1{
+  font-size: 2rem;
+  line-height:1.2em;
+  margin-bottom: 0;
+}
+#hero-overlay h2{
+  margin-top:10px;
+}
+#cta{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color:white;
+  font-size: 1em;
+  background-color: rgba(10, 97, 13, 1);
+  padding:12px;
+}
+article{
+  width:90%;
+  margin: auto;
+}
+footer{
+  color: rgb(109, 129, 102);
+  padding: 20px;
+}
+footer a{
+  color: rgb(109, 129, 102);
+
+}
+@media only screen and (min-width: 600px) {
+
+  nav li{
+    display: inline-block;
+    padding: 15px;
+  }
+  #hero{
+    height:600px;
+  }
+  #hero-overlay h1{
+    top:10%;
+    font-size: 3.5rem;
+  }
+  section,
+  footer{
+    margin: 0 auto;
+    width:90%;
+  }
+  article{
+    float:left;
+    width:45%;
+    padding-right:5%;
+  }
+  .clearfix::after{
+    content:" ";
+    clear:both;
+    display: table;
+
+  }
 }
