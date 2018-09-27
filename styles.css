@@ -30,6 +30,16 @@ nav a{
   background-position: center center;
   height: 570px;
 }
+
+/* ------- About page hero img ------------------------*/
+/* ---------------------------------------------------*/
+#about-hero{
+  background: url('img/hiking.jpeg');
+  /* https://www.pexels.com/photo/orange-backpack-840719/ */
+  background-size: cover;
+  background-position: center center;
+  height: 570px;
+}
 #hero-overlay{
   text-align: right;
   margin-right: 12%;
@@ -52,7 +62,6 @@ nav a{
   margin-top: 10px;
 }
 #cta{
-  /* Added text transform */
   text-transform: uppercase;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   color: white;
@@ -62,8 +71,6 @@ nav a{
   padding: 12px;
 }
 section{
-  /* remove border-bottom
-  border-bottom:1px solid #666; */
   margin: 10px auto;
   width: 90%;
 }
@@ -73,13 +80,8 @@ img{
 }
 figure{
   margin: 0;
-  /* Adding position relative
-  for captions to be positioned
-  relative to their parent container */
   position: relative;
 }
-/* Add captions and figcaption span to add padding
-without pushing dark background past img */
 figcaption{
   position: absolute;
   bottom: 5px;
@@ -92,8 +94,6 @@ figcaption{
 figcaption span{
   padding-left: 10px;
 }
-
-/* Footer changes */
 footer{
   background: rgba(55, 88, 111, 0.7);
   color: white;
@@ -112,13 +112,12 @@ footer a{
     padding: 15px;
   }
   #hero{
-    /* Change height for desktop
-    to see more of the image */
     height: 600px;
   }
   #hero-overlay h1{
     top: 10%;
     font-size: 3.5rem;
+    margin-right: 5%;
   }
   article{
     float: left;
