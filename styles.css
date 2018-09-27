@@ -112,12 +112,14 @@ footer a{
     padding: 15px;
   }
   #hero{
-    height: 600px;
+    height: 800px;
   }
   #hero-overlay h1{
     top: 10%;
     font-size: 3.5rem;
-    margin-right: 5%;
+  }
+  #hero-overlay{
+    margin-right:5%;
   }
   article{
     float: left;
