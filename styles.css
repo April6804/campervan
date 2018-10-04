@@ -15,7 +15,6 @@ nav ul{
 nav li{
   list-style-type: none;
   padding: 15px 0;
-  /* Added black top border */
   border-top: 1px solid #000;
 }
 nav a{
@@ -27,19 +26,30 @@ nav a{
   background: url('img/Alan-Caldwell-Pexels.jpg');
   /* pexels.com */
   background-size: cover;
-  background-position: center center;
+  /* Change position to 80%*/
+  background-position: center 80%;
   height: 570px;
 }
 
 /* ------- About page hero img ------------------------*/
-/* ---------------------------------------------------*/
 #about-hero{
   background: url('img/hiking.jpeg');
   /* https://www.pexels.com/photo/orange-backpack-840719/ */
   background-size: cover;
-  background-position: center center;
+  /* Change position to 80%*/
+  background-position: center 80%;
   height: 570px;
 }
+/* ------- Contact page hero img ------------------------*/
+#contact-hero{
+  background: url('img/people-waterfall.jpeg');
+  /* https://www.pexels.com/photo/adventure-boy-girl-idyllic-450441/ */
+  background-size: cover;
+  /* Change position to 0 center */
+  background-position: 0 center;
+  height: 570px;
+}
+
 #hero-overlay{
   text-align: right;
   margin-right: 12%;
@@ -48,7 +58,6 @@ nav a{
 }
 #hero-overlay h1,
 #hero-overlay h2{
-  /* Adding shadow */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   color: white;
   font-weight: 100;
@@ -75,7 +84,6 @@ section{
   width: 90%;
 }
 img{
-  /* Images are now responsive */
   width: 100%;
 }
 figure{
@@ -105,15 +113,57 @@ footer a{
   color: white;
 }
 
+/* ------- Contact page form ------------------------*/
+form{
+  width:60%;
+  margin: 20px auto;
+}
+form p{
+  margin-bottom:5px;
+}
+label{
+  display:block;
+  padding:2% 0;
+}
+input{
+  width:100%;
+  padding:2%;
+  font-size: 0.9em;
+}
+textarea{
+  min-height:100px;
+  width:100%;
+  padding:2%;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+}
+input[type=submit]{
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
+  width:104%;
+  margin-top:5%;
+}
+
+
 @media only screen and (min-width: 600px) {
 
   nav li{
     display: inline-block;
     padding: 15px;
   }
-  #hero{
-    height: 800px;
+  /* ------- Add contact page hero ----------*/
+  #hero,
+  #about-hero,
+  #contact-hero{
+    /*Change height*/
+    height: 90vh;
   }
+  form{
+    width:50%;
+    margin: 10px auto;
+  }
+
   #hero-overlay h1{
     top: 10%;
     font-size: 3.5rem;
@@ -135,4 +185,52 @@ footer a{
     display: table;
 
   }
+
 }
+
+
+
+
+/* ------For big screens -----------------------
+@media only screen and (min-width: 1400px) {
+	#hero,
+  #about-hero{
+		height:100vh;
+	}
+}
+
+/* ------For medium retina screens -----------------------
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 1400px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 1400px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 1400px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 1400px),
+only screen and (                min-resolution: 192dpi) and (max-width: 1400px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 1400px) {
+  #hero,
+  #about-hero{
+    /* Place a pixel value below and
+    look at it in the browser at full width.
+    If you don't see more of the picture
+    (like the tires on the home page),
+    test another value
+    height:90vh;
+  }
+}
+
+/* Small screen, retina ------
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) {
+
+  #hero,
+  #about-hero{
+    height:90vh;
+  }
+
+}
+*/
