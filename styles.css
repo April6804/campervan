@@ -21,6 +21,7 @@ nav a{
   text-decoration: none;
   display: block;
 }
+/* ------- Homepage main img --------------*/
 #hero{
   background: url('img/Alan-Caldwell-Pexels-min.jpg');
   /* pexels.com */
@@ -28,8 +29,7 @@ nav a{
   background-position: center 80%;
   height: 570px;
 }
-
-/* ------- About page hero img ------------------------*/
+/* ------- About page main img --------------*/
 #about-hero{
   background: url('img/hiking-min.jpeg');
   /* https://www.pexels.com/photo/orange-backpack-840719/ */
@@ -37,7 +37,15 @@ nav a{
   background-position: center 80%;
   height: 570px;
 }
-/* ------- Contact page hero img ------------------------*/
+/* ------- Contact page main img -------------*/
+#gallery-hero{
+  background: url('img/Randaniel-min.jpg');
+  /* https://c1.staticflickr.com/2/1689/25505901876_80320abe05_h.jpg */
+  background-size: cover;
+  background-position: 0 30%;
+  height: 570px;
+}
+/* ------- Contact page main img -------------*/
 #contact-hero{
   background: url('img/people-waterfall-min.jpeg');
   /* https://www.pexels.com/photo/adventure-boy-girl-idyllic-450441/ */
@@ -51,6 +59,14 @@ nav a{
   position: relative;
   top: 2%;
 }
+/* Change alignment for Gallery page*/
+#gallery-hero #hero-overlay{
+  text-align: left;
+  margin-left: 12%;
+  position: relative;
+  top: 2%;
+}
+
 #hero-overlay h1,
 #hero-overlay h2{
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
@@ -65,15 +81,6 @@ nav a{
 #hero-overlay h2{
   margin-top: 10px;
 }
-#cta{
-  text-transform: uppercase;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 1em;
-  background-color: rgba(10, 97, 13, 1);
-  padding: 12px;
-}
 section{
   margin: 10px auto;
   width: 90%;
@@ -85,6 +92,7 @@ figure{
   margin: 0;
   position: relative;
 }
+
 figcaption{
   position: absolute;
   bottom: 5px;
@@ -97,19 +105,63 @@ figcaption{
 figcaption span{
   padding-left: 10px;
 }
+
 footer{
   background: rgba(55, 88, 111, 0.7);
   color: white;
   margin: 20px auto 0 auto;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
+}
+footer small{
+  margin: 0 20px;
+  display: block;
 }
 footer a{
   color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-/* ------- Contact page form ------------------------*/
+/* ------ About page ------------------*/
+.button {
+    background: radial-gradient( #fff,#f1f1f1, #e2e2e2 );
+    font-size: 1em;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+}
+.hover, .button:hover {
+    background: #f1f1f1;
+}
+.info {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+.about figure{
+  margin-top:30px;
+}
+/* ------- Gallery page --------------*/
+.flexbox{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  width:90%;
+  margin: 2% auto 0;
+}
+.flexbox div{
+  margin:2%;
+  width:350px;
+  flex-grow:1;
+}
+.flexbox img{
+  width: 100%;
+  height:auto;
+}
+
+/* ------- Contact form ---------------*/
 form{
-  width:60%;
+  width:90%;
   margin: 20px auto;
 }
 form p{
@@ -131,6 +183,28 @@ textarea{
   font-size: 0.9em;
   border: 1px solid #ccc;
 }
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    padding:2%;
+    margin-top:0.5%;
+    font-size: 0.9em;
+    display: inline-block;
+    cursor: pointer;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: grey;
+}
 input[type=submit]{
   -webkit-appearance:button;
   -moz-appearance:button;
@@ -138,6 +212,12 @@ input[type=submit]{
   width:104%;
   margin-top:5%;
 }
+/* ------- Contact Submit page ---------------*/
+#thanks{
+    text-align: center;
+    height:76vh;
+  }
+
 @media only screen and (min-width: 600px) {
   nav li{
     display: inline-block;
@@ -147,10 +227,6 @@ input[type=submit]{
   #about-hero,
   #contact-hero{
     height: 90vh;
-  }
-  form{
-    width:50%;
-    margin: 10px auto;
   }
   #hero-overlay h1{
     top: 10%;
@@ -162,14 +238,26 @@ input[type=submit]{
   article{
     float: left;
     width: 48%;
-    padding-right: 4%;
+    padding-left: 4%;
   }
-  article:last-of-type{
-    padding-right: 0;
+  article:first-of-type{
+    padding-left: 0;
+  }
+  .about{
+    float: left;
+    width: 48%;
+    padding-left: 4%;
   }
   .clearfix::after{
     content:" ";
     clear: both;
     display: table;
+  }
+  .flexbox div{
+    margin:1%;
+  }
+  form{
+    width:50%;
+    margin: 10px auto;
   }
 }

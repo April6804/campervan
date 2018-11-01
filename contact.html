@@ -14,7 +14,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -27,21 +27,26 @@
 
     <section class="clearfix">
 
-      <form action="https://www.w3schools.com/action_page.php">
-        <p>Please give us a call here: <a href="tel:1-502-555-1234">1 (502) 555-1234</a>
-        <br>
-        or leave us a message below:</p>
+      <form action="thanks.html"><!--https://www.w3schools.com/action_page.php-->
+        <p> Please help us make this site great by sharing your camping pictures
+          and places you have been around Kentucky.</p>
 
-        <label for="first-name">First name:</label>
-        <input type="text" id="first-name" value="Mickey">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name">
 
-        <label for="last-name">Last name:</label>
-        <input type="text" id="last-name" name="lastname" value="Mouse">
+        <label for="camp">Campsite:</label>
+        <input type="text" id="camp" name="camp">
 
         <label for="message">Your Message:</label>
         <textarea id="message"></textarea>
 
+        <input type="file" name="file" id="file" class="" data-multiple-caption="{count} files selected" multiple />
+        <!--<label for="file">Choose a photo to upload</label>-->
+
         <input type="submit" value="Submit">
+
+        <p>If you have questions and need to recieve an aswer right away,
+          give us a call here: <br><a href="tel:1-502-555-1234">1 (502) 555-1234</a></p>
       </form>
 
     </section>
@@ -49,7 +54,7 @@
     <footer>
       <small>&copy; 2018 Bluegrass Campervans <br>
         <a href="tel:1-502-555-1234">1 (502) 555-1234</a><br>
-        More info goes here.
+        Contact us and let us know how we can improve our site.
       </small>
     </footer>
 
