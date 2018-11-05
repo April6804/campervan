@@ -31,22 +31,29 @@
         <p> Please help us make this site great by sharing your camping pictures
           and places you have been around Kentucky.</p>
 
-        <label for="name">Your name:</label>
+        <label for="name">Your Name:</label>
         <input type="text" id="name" name="name">
 
-        <label for="camp">Campsite:</label>
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email">
+
+        <label for="camp">Favorite Campsite:</label>
         <input type="text" id="camp" name="camp">
 
         <label for="message">Your Message:</label>
         <textarea id="message"></textarea>
 
-        <input type="file" name="file" id="file" class="" data-multiple-caption="{count} files selected" multiple />
-        <!--<label for="file">Choose a photo to upload</label>-->
+        <input type="checkbox" name="news" value="Newsletters"> Recieve our newsletters
+
+        <div id="yourBtn" onclick="getFile()">Click to upload a photo</div>
+        <div id="hide"><input id="upfile" type="file" value="upload" onchange="sub(this)"/></div>
+        <!-- hiding input file button to have a custom button above-->
+
 
         <input type="submit" value="Submit">
 
         <p>If you have questions and need to recieve an aswer right away,
-          give us a call here: <br><a href="tel:1-502-555-1234">1 (502) 555-1234</a></p>
+          give us a call here: <a href="tel:1-502-555-1234">1 (502) 555-1234</a></p>
       </form>
 
     </section>
@@ -57,6 +64,6 @@
         Contact us and let us know how we can improve our site.
       </small>
     </footer>
-
+    <script src="app.js"></script>
   </body>
 </html>

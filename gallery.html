@@ -5,90 +5,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-
-
-    /* The Modal (background) */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 5%;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100vh;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Modal Content */
-    .modal-content {
-      position: relative;
-      background-color: #fefefe;
-      margin: auto;
-      padding: 0;
-      width: 70%;
-      max-width: 800px;
-    }
-
-    /* The Close Button */
-    .close {
-      color: white;
-      position: absolute;
-      top: 10px;
-      right: 25px;
-      font-size: 35px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #999;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    img {
-      margin-bottom: -4px;
-    }
-
-
-    </style>
 
   </head>
 
@@ -122,9 +38,9 @@
     </div><!-- /flexbox -->
 
     <!-- slides-->
-    <div id="myModal" class="modal">
+    <div id="myModal" class="lightbox">
         <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
+        <div class="lightbox-content">
           <div class="mySlides"><img src="img/Tyler-Linn‎-min.jpg"></div>
           <div class="mySlides"><img src="img/bobper-min.jpg"></div>
           <div class="mySlides"><img src="img/Mary-De-Tore-Calkins‎-min.jpg"></div>
@@ -136,7 +52,7 @@
           <div class="mySlides"><img src="img/Shane-N-Juntu-Oberg‎-min.jpg"></div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div><!--/modal-content-->
+        </div><!--/content-->
       </div><!--/myModal-->
     <!--
     Tyler-Linn‎-min.jpg https://www.facebook.com/photo.php?fbid=10105492516514840&set=g.189429388401481&type=1&theater&ifg=1
@@ -156,42 +72,7 @@
       </small>
     </footer>
 
-    <script>
-      function openModal() {
-      document.getElementById('myModal').style.display = "block";
-      }
-
-      function closeModal() {
-      document.getElementById('myModal').style.display = "none";
-      }
-
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-      showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-      showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      }
-    </script>
+    <script src="app.js"></script>
 
 
   </body>
