@@ -21,10 +21,14 @@ nav a{
   text-decoration: none;
   display: block;
 }
+/* Make all images responsive */
+img{
+  width: 100%;
+}
 /* ------- Homepage main img --------------*/
 #hero{
   background: url('img/Alan-Caldwell-Pexels-min.jpg');
-  /* pexels.com */
+  /* https://www.pexels.com/photo/automobile-campervan-camping-cars-587976/ */
   background-size: cover;
   background-position: center 80%;
   height: 570px;
@@ -37,7 +41,7 @@ nav a{
   background-position: center 80%;
   height: 570px;
 }
-/* ------- Contact page main img -------------*/
+/* ------- Gallery page main img -------------*/
 #gallery-hero{
   background: url('img/Randaniel-min.jpg');
   /* https://c1.staticflickr.com/2/1689/25505901876_80320abe05_h.jpg */
@@ -53,6 +57,7 @@ nav a{
   background-position: 0 center;
   height: 570px;
 }
+/* Holds the h1 and h2 for each page */
 #hero-overlay{
   text-align: right;
   margin-right: 12%;
@@ -66,7 +71,6 @@ nav a{
   position: relative;
   top: 2%;
 }
-
 #hero-overlay h1,
 #hero-overlay h2{
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
@@ -85,14 +89,10 @@ section{
   margin: 10px auto;
   width: 90%;
 }
-img{
-  width: 100%;
-}
 figure{
   margin: 0;
   position: relative;
 }
-
 figcaption{
   position: absolute;
   bottom: 5px;
@@ -105,7 +105,6 @@ figcaption{
 figcaption span{
   padding-left: 10px;
 }
-
 footer{
   background: rgba(55, 88, 111, 0.7);
   color: white;
@@ -134,7 +133,7 @@ footer a{
 .date{
   width:20%;
   float:left;
-  margin-right:1%;
+  margin-right:4%;
   font-weight: bold;
   font-size:.8em;
   text-align: center;
@@ -167,8 +166,7 @@ footer a{
   width: 100%;
   height:auto;
 }
-
-/* The lightbox */
+/* Gallery lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -181,35 +179,30 @@ footer a{
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .lightbox-content {
   position: relative;
-  margin: auto;
+  margin: 8% auto;
   padding: 0;
-  width: 50%;
+  width: 90%;
   max-width: 700px;
 }
-
 .close {
   color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
+  position: relative;
+  top: -5px;
+  right: -97%;
   font-size: 35px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
-
 .cursor {
   cursor: pointer;
 }
-
 .prev,
 .next {
   cursor: pointer;
@@ -217,7 +210,7 @@ footer a{
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: 0px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -226,17 +219,14 @@ footer a{
   user-select: none;
   -webkit-user-select: none;
 }
-
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 /* ------- Contact form ---------------*/
 form{
   width:90%;
@@ -270,14 +260,13 @@ textarea{
 	z-index: -1;
 }
 .inputfile + label {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    padding:2%;
-    margin-top:0.5%;
-    font-size: 0.9em;
-    display: inline-block;
-    cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  padding:2%;
+  margin-top:0.5%;
+  font-size: 0.9em;
+  display: inline-block;
 }
 .inputfile:focus + label,
 .inputfile + label:hover {
@@ -288,7 +277,9 @@ input[type=file]{
 }
 input[type=checkbox]{
   width:auto;
+  cursor: pointer;
 }
+/* Hide original ugly input file button */
 #hide{
   height:0px;
   width:0px;
@@ -303,8 +294,8 @@ input[type=submit],
   text-align: center;
   margin-top: 3%;
   padding:10px 0;
+  cursor: pointer;
 }
-
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
     text-align: center;
@@ -339,19 +330,24 @@ input[type=submit],
   #no-top-margin{
     margin-top:0;
   }
-  .about{
-    float: left;
-    width: 48%;
-    padding-left: 4%;
-  }
   .clearfix::after{
     content:" ";
     clear: both;
     display: table;
   }
+  /* ------- About page --------------*/
+  .date{
+    margin-right:1%;
+  }
+  /* ------- Gallery page --------------*/
   .flexbox div{
     margin:1%;
+    cursor: pointer;
   }
+  .lightbox-content{
+    margin: auto;
+  }
+  /* ------- Contact page --------------*/
   form{
     width:50%;
     margin: 10px auto;
