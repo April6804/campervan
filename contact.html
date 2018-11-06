@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Campervans</title>
+    <title>Bluegrass Campervans</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400" rel="stylesheet">
-    <!-- Add viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -26,8 +25,7 @@
     </div><!--hero-->
 
     <section class="clearfix">
-
-      <form action="thanks.html"><!--https://www.w3schools.com/action_page.php-->
+      <form action="thanks.html"><!-- Thanks page after submition -->
         <p> Please help us make this site great by sharing your camping pictures
           and places you have been around Kentucky.</p>
 
@@ -45,17 +43,15 @@
 
         <input type="checkbox" class="cursor" name="news" value="Newsletters"> Recieve our newsletters
 
-        <div id="yourBtn" class="cursor" onclick="getFile()">Click to upload a photo</div>
+        <!-- Custom upload file button, hiding standard file input -->
+        <div id="btn" class="cursor" onclick="getFile()">Click to upload a photo</div>
         <div id="hide"><input id="upfile" type="file" value="upload" onchange="sub(this)"/></div>
-        <!-- hiding input file button to have a custom button above-->
-
 
         <input type="submit" class="cursor" value="Submit">
 
         <p>If you have questions and need to recieve an aswer right away,
           give us a call here: <a href="tel:1-502-555-1234">1 (502) 555-1234</a></p>
       </form>
-
     </section>
 
     <footer>
@@ -64,6 +60,7 @@
         Contact us and let us know how we can improve our site.
       </small>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>
