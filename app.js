@@ -1,4 +1,9 @@
 // For lightbox
+
+$(".flexbox img").click(openModal);
+$(".close").click(closeModal);
+
+
 function openModal() {
 document.getElementById('myModal').style.display = "block";
 }
@@ -34,6 +39,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
 
 
 
