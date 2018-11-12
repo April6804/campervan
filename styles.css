@@ -296,6 +296,9 @@ input[type=submit],
   padding:10px 0;
   cursor: pointer;
 }
+#button{
+  background: #fff;
+}
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
     text-align: center;

@@ -1,19 +1,17 @@
-// For lightbox
-
+// For lightbox on Gallery page--------------------------------
 $(".flexbox img").click(openModal);
 $(".close").click(closeModal);
 
-
+// Darken the page
 function openModal() {
 document.getElementById('myModal').style.display = "block";
 }
 
+// Remove the darkness
 function closeModal() {
 document.getElementById('myModal').style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
 
 function plusSlides(n) {
 showSlides(slideIndex += n);
@@ -23,34 +21,27 @@ function currentSlide(n) {
 showSlides(slideIndex = n);
 }
 
+//Loop through slides, hide them, display one at a time
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
-
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
 
 
-
-
-//For upload button on Contact package
+//For upload button on Contact package -------------------------------
+//On click alow user to select file
 function getFile(){
   document.getElementById("upfile").click();
 }
+//Grab file name and change button text
 function sub(obj){
    var file = obj.value;
    var fileName = file.split("\\");
    document.getElementById("btn").innerHTML = fileName[fileName.length-1];
-   document.myForm.submit();
-   event.preventDefault();
  }
