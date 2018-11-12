@@ -131,7 +131,7 @@ footer a{
   border-top:1px solid #ccc;
 }
 .date{
-  width:20%;
+  width:22%;
   float:left;
   margin-right:4%;
   font-weight: bold;
@@ -251,27 +251,6 @@ textarea{
   font-size: 0.9em;
   border: 1px solid #ccc;
 }
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
-.inputfile + label {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  padding:2%;
-  margin-top:0.5%;
-  font-size: 0.9em;
-  display: inline-block;
-}
-.inputfile:focus + label,
-.inputfile + label:hover {
-    background-color: grey;
-}
 input[type=file]{
   padding-left: 0;
 }
@@ -290,14 +269,15 @@ input[type=submit],
   -webkit-appearance:button;
   -moz-appearance:button;
   appearance:button;
+  border-radius:0;
   width:104%;
   text-align: center;
   margin-top: 3%;
   padding:10px 0;
   cursor: pointer;
 }
-#button{
-  background: #fff;
+#btn{
+  width: 100%;
 }
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
@@ -354,5 +334,11 @@ input[type=submit],
   form{
     width:50%;
     margin: 10px auto;
+  }
+  input[type=submit]{
+    border-radius: 0px;
+  }
+  #btn{
+    width: 104%;
   }
 }
