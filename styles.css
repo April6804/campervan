@@ -276,7 +276,9 @@ input[type=submit],
   cursor: pointer;
 }
 .iphone #btn{
-  width: 90%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 3px;
 
 }
 /* ------- Thanks / Submit page ---------------*/
