@@ -276,11 +276,10 @@ input[type=submit],
   cursor: pointer;
 }
 .iphone #btn{
-  width: 100%;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: .9em;
-
+  padding-top: 2px;
 }
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
