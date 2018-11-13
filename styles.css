@@ -242,7 +242,7 @@ label{
 input{
   width:100%;
   padding:2%;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 textarea{
   min-height:100px;
@@ -274,6 +274,9 @@ input[type=submit],
   margin-top: 3%;
   padding:10px 0;
   cursor: pointer;
+}
+_:-moz-tree-row(hover), #btn{
+  width:102%;
 }
 .iphone #btn{
   border: 1px solid black;
@@ -339,8 +342,5 @@ input[type=submit],
   form{
     width:50%;
     margin: 10px auto;
-  }
-  #btn{
-    width: 104%;
   }
 }
