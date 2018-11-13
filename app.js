@@ -46,7 +46,7 @@ function sub(obj){
    document.getElementById("btn").innerHTML = fileName[fileName.length-1];
  }
 
-// For iphone: add class
- if( /iPhone/i.test(navigator.userAgent) ) {
-  document.querySelector('html').classList.add('iphone');
- }
+// For iphone: add class on the form
+if(navigator.userAgent.match(/iPhone/)) {
+    $('html').addClass('iphone');
+}

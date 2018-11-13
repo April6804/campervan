@@ -276,16 +276,17 @@ input[type=submit],
   cursor: pointer;
 }
 .iphone #btn{
-  width: 50%;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
+  width: 90%;
+
 }
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
     text-align: center;
     height:76vh;
   }
+
+
+
 
 @media only screen and (min-width: 700px) {
   nav li{
