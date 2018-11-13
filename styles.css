@@ -269,15 +269,17 @@ input[type=submit],
   -webkit-appearance:button;
   -moz-appearance:button;
   appearance:button;
-  border-radius:0;
   width:104%;
   text-align: center;
   margin-top: 3%;
   padding:10px 0;
   cursor: pointer;
 }
-#btn{
-  width: 100%;
+.iphone #btn{
+  width: 50%;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
 }
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
@@ -334,9 +336,6 @@ input[type=submit],
   form{
     width:50%;
     margin: 10px auto;
-  }
-  input[type=submit]{
-    border-radius: 0px;
   }
   #btn{
     width: 104%;
