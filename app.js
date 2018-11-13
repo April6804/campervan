@@ -46,7 +46,7 @@ function sub(obj){
    document.getElementById("btn").innerHTML = fileName[fileName.length-1];
  }
 
-// For iphone: add class on the form
+// For iphone: add a class on the html to target width of buttons on contact page.
 if(navigator.userAgent.match(/iPhone/)) {
     $('html').addClass('iphone');
 }

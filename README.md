@@ -2,15 +2,15 @@
 
 ## Description
 ```
-A website for a club of people who like to camp in campervans in Kentucky. Site shows popular campsites and pictures of different campervans.
+A website for a club of people who like to camp in campervans in Kentucky. Site shows popular campsites and pictures of different campervans. https://april6804.github.io/campervan/index.html
 
 ```
 
 
 
-## Custom CSS Classes
+## Custom CSS Classes and IDs
 ```
-The class(es) I created are:
+The class(es) and ID(s) I created are:
 
 1. Hero and hero-overlay classes apply a large image to each page and the ability to lay the page's h1 and h2 on top of them.
 
@@ -18,7 +18,7 @@ The class(es) I created are:
 
 3. Flexbox and lightbox classes are on the Gallery page to display the images on the page in a responsive grid and allow JS to display each image larger after clicking on an image.
 
-4. btn class is on the Contact page for a custom button that uploads files and resembles the submit button.
+4. btn ID is on the Contact page for a custom button that uploads files and resembles the submit button.
 
 ```
 
@@ -32,5 +32,6 @@ The javascript functions I created are:
 
 2. getFile and sub(obj) are also on the app.js file and allows my custom button to upload a file to be included in a contact form. Of course it is only for a demo and doesn't actually upload the image and send it anywhere.
 
+3. if(navigator.userAgent.match(/iPhone/)) to add a class to the html on the Contact page to adjust the width on my custom btn. (IOS changed the styles) 
 
 ```
