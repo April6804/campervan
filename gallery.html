@@ -4,19 +4,19 @@
     <title>Bluegrass Campervans</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
 
   <body>
     <div id="gallery-hero">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
       </nav>
 
       <div id="hero-overlay">
@@ -26,34 +26,17 @@
     </div><!--hero-->
 
     <div class="flexbox">
-        <div><img src="img/Tyler-Linn-min.jpg" alt="Green VW campervan" onclick="currentSlide(1)"></div>
-        <div><img src="img/bobper-min.jpg" alt="Interior of campervan" onclick="currentSlide(2)"></div>
-        <div><img src="img/Mary-De-Tore-Calkins-min.jpg" alt="Campervan in the woods" onclick="currentSlide(3)"></div>
-        <div><img src="img/journeys-of-thankfulness-min.jpg" alt="Campervan at a campsite" onclick="currentSlide(4)"></div>
-        <div><img src="img/Campervan_CharlieMoon_Flickr-min.jpg" alt="White and teal VW campervan" onclick="currentSlide(5)"></div>
-        <div><img src="img/tan-and-green-min.jpg" alt="Dark brown with pop-up campervan" onclick="currentSlide(6)"></div>
-        <div><img src="img/light-wood-min.jpg" alt="Campervan with light wood interior" onclick="currentSlide(7)"></div>
-        <div><img src="img/Sandra-Douglas-min.jpg" alt="Cute interior of campervan" onclick="currentSlide(8)"></div>
-        <div><img src="img/Shane-N-Juntu-Oberg-min.jpg" alt="Campervan with pop-top and campfire" onclick="currentSlide(9)"></div>
+        <div><img src="img/Tyler-Linn-min.jpg" alt="Green VW campervan"></div>
+        <div><img src="img/bobper-min.jpg" alt="Interior of campervan"></div>
+        <div><img src="img/Mary-De-Tore-Calkins-min.jpg" alt="Campervan in the woods"></div>
+        <div><img src="img/journeys-of-thankfulness-min.jpg" alt="Campervan at a campsite"></div>
+        <div><img src="img/Campervan_CharlieMoon_Flickr-min.jpg" alt="White and teal VW campervan"></div>
+        <div><img src="img/tan-and-green-min.jpg" alt="Dark brown with pop-up campervan"></div>
+        <div><img src="img/light-wood-min.jpg" alt="Campervan with light wood interior"></div>
+        <div><img src="img/Sandra-Douglas-min.jpg" alt="Cute interior of campervan"></div>
+        <div><img src="img/Shane-N-Juntu-Oberg-min.jpg" alt="Campervan with pop-top and campfire"></div>
     </div><!-- /flexbox -->
 
-    <!-- Lightbox images-->
-    <div id="myModal" class="lightbox">
-        <div class="lightbox-content">
-          <span class="close cursor">&times;</span>
-          <div class="mySlides"><img src="img/Tyler-Linn-min.jpg"></div>
-          <div class="mySlides"><img src="img/bobper-min.jpg"></div>
-          <div class="mySlides"><img src="img/Mary-De-Tore-Calkins-min.jpg"></div>
-          <div class="mySlides"><img src="img/journeys-of-thankfulness-min.jpg"></div>
-          <div class="mySlides"><img src="img/Campervan_CharlieMoon_Flickr-min.jpg"></div>
-          <div class="mySlides"><img src="img/tan-and-green-min.jpg"></div>
-          <div class="mySlides"><img src="img/light-wood-min.jpg"></div>
-          <div class="mySlides"><img src="img/Sandra-Douglas-min.jpg"></div>
-          <div class="mySlides"><img src="img/Shane-N-Juntu-Oberg-min.jpg"></div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-      </div><!--/lightbox-->
 
     <!-- Image sources:
     Tyler-Linn‎-min.jpg https://www.facebook.com/photo.php?fbid=10105492516514840&set=g.189429388401481&type=1&theater&ifg=1
@@ -68,11 +51,12 @@
     -->
 
     <footer>
-      <small>&copy; 2018 Bluegrass Campervans <br>
-        <a href="tel:1-502-555-1234">1 (502) 555-1234</a><br>
-        <a href="contact.html">Contact us</a> and let us know how we can improve our site.
+      <small>&copy; 2019 Bluegrass Campervans <br>
+        <a href="tel:1-502-555-1234">(502) 555-1234</a><br>
+        <a href="contact.html">Contact us</a>
       </small>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="app.js"></script>
 

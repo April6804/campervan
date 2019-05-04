@@ -4,18 +4,18 @@
     <title>Bluegrass Campervans</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
     <div id="hero">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
       </nav>
 
       <div id="hero-overlay">
@@ -23,8 +23,8 @@
       </div><!--overlay-->
     </div><!--hero-->
 
-    <section class="clearfix">
-      <article>
+    <main class="clearfix">
+      <section>
         <h3>Camping in Kentucky State Parks</h3>
         <figure>
           <img src="img/david-min.jpg" alt="David's campervan">
@@ -45,9 +45,9 @@
         <p>Due to weather, Kentucky State Parks cannot guarantee the availability of water or other resources at the
           campgrounds during inclement weather months when freezing temperatures are possible. Please contact
           parks directly for available resources if traveling during months that are conducive to freezing temperatures. </p>
-      </article>
+      </section>
 
-      <article>
+      <section>
         <h3>Camping at Red River Gorge</h3>
         <figure>
           <img src="img/orange-manu-johnston-min.jpg" alt="Johnston's campervan">
@@ -59,12 +59,12 @@
         <p>Maximize your time chilling at the campfire by staying at one of these campgrounds within Red River Gorge, KY.
           Some popular campgrounds are located below in the map.</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d100854.0014644347!2d-83.71113566095738!3d37.82078701128086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scamping!5e0!3m2!1sen!2sus!4v1537467815458" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </article>
-    </section>
+      </section>
+    </main>
 
-    <section class="clearfix">
+    <main class="clearfix">
       <h3>Dog Creek Campgrounds</h3>
-      <article>
+      <section>
         <figure>
           <img src="img/lake-park-min.png" alt="David's campervan near portage lake state park">
           <!-- https://www.facebook.com/photo.php?fbid=10217240871392006&set=gm.234753310535755&type=3&theater&ifg=1 -->
@@ -72,21 +72,24 @@
             <span>Camping at Dog Creek</span>
           </figcaption>
         </figure>
-      </article>
+      </section>
 
-      <article>
+      <section>
         <p id="no-top-margin">Dog Creek Campground sits on the shores of Nolin River Lake in the rolling landscape of southern Kentucky. The large lake and surrounding woods create a recreational oasis for outdoor enthusiasts.</p>
         <p>The campground offers 70 campsites, 24 with electric and water hookup. Other amenities include a dump station, pit restrooms, playground, boat ramp, and watchable wildlife area. Other area attractions include Mammoth Cave National Park, Wax Marina, Nolin Lake State Park, golf courses, and riding stables.</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.9792379408636!2d-86.13847788469538!3d37.31931947984491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8868aed5094b8d2d%3A0x239445f59f2bc700!2sDog+Creek+Rd%2C+Kentucky!5e0!3m2!1sen!2sus!4v1540855924823" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </article>
-    </section>
+      </section>
+    </main>
 
     <footer>
-      <small>&copy; 2018 Bluegrass Campervans <br>
-        <a href="tel:1-502-555-1234">1 (502) 555-1234</a><br>
-        <a href="contact.html">Contact us</a> and let us know how we can improve our site.
+      <small>&copy; 2019 Bluegrass Campervans <br>
+        <a href="tel:1-502-555-1234">(502) 555-1234</a><br>
+        <a href="contact.html">Contact us</a>
       </small>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
 
   </body>
 </html>

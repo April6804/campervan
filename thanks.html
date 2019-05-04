@@ -4,18 +4,18 @@
     <title>Bluegrass Campervans</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
     <div id="contact-hero">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
       </nav>
 
       <div id="hero-overlay">
@@ -25,10 +25,13 @@
     </div><!--hero-->
 
     <footer style="margin:0;"> <!-- Getting rid of white space -->
-      <small>&copy; 2018 Bluegrass Campervans <br>
-        <a href="tel:1-502-555-1234">1 (502) 555-1234</a><br>
-        <a href="contact.html">Contact us</a> and let us know how we can improve our site.
+      <small>&copy; 2019 Bluegrass Campervans <br>
+        <a href="tel:1-502-555-1234">(502) 555-1234</a><br>
+        <a href="contact.html">Contact us</a>
       </small>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
