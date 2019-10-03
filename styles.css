@@ -53,7 +53,7 @@ a.active {
 
 /* Make all images responsive */
 img{
-  width: 100%;
+  max-width: 100%;
 }
 /* ------- Homepage main img --------------*/
 #hero{
@@ -76,7 +76,7 @@ img{
   background: url('img/Randaniel-min.jpg');
   /* https://c1.staticflickr.com/2/1689/25505901876_80320abe05_h.jpg */
   background-size: cover;
-  background-position: 0 30%;
+  background-position: 0 40%;
   height: 50vh;
 }
 /* ------- Contact page main img -------------*/
@@ -181,7 +181,7 @@ footer a{
   cursor: pointer;
 }
 /* ------- Gallery page --------------*/
-/* Grid styles for photos */
+/* Flex Box styles for photos */
 .flexbox{
   display: flex;
   flex-wrap:wrap;
@@ -289,7 +289,7 @@ _:-moz-tree-row(hover), #btn{
   #about-hero,
   #contact-hero,
   #gallery-hero{
-    height: 90vh;
+    height: 70vh;
   }
   #hero-overlay h1{
     top: 10%;
@@ -321,7 +321,6 @@ _:-moz-tree-row(hover), #btn{
   /* ------- Gallery page --------------*/
   .flexbox div{
     margin:1%;
-    cursor: pointer;
   }
   /* ------- Contact page --------------*/
   form{
