@@ -1,7 +1,3 @@
-*{
-  box-sizing: border-box;
-
-}
 
 body{
   background: #f1f1f1;
@@ -9,13 +5,11 @@ body{
   padding:0;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
-
 .topnav {
 	overflow: hidden;
 	background-color:rgba(40,40,40,.7);
 }
 .topnav a {
-	float: left;
 	display: none;
 	color: #f2f2f2;
 	padding: 14px 16px;
@@ -27,7 +21,7 @@ body{
 	color: black;
 	}
 a.active {
-	display: block;
+	display: inline-grid;
 	background-color:rgba(40,40,40,.6);
 	color: white;
 }
@@ -55,67 +49,57 @@ a.active {
 img{
   max-width: 100%;
 }
-/* ------- Homepage main img --------------*/
-#hero{
+/* ------- ALL pages main img --------------*/
+.hero{
+    height: 50vh;
+    min-height: 400px;
+}
+/* ------- Index page main img --------------*/
+.index-hero{
   background: url('img/Alan-Caldwell-Pexels-min.jpg');
   /* https://www.pexels.com/photo/automobile-campervan-camping-cars-587976/ */
-  background-size: cover;
   background-position: center 80%;
-  height: 50vh;
+  background-size: cover;
 }
 /* ------- About page main img --------------*/
-#about-hero{
+.about-hero{
   background: url('img/hiking-min.jpeg');
   /* https://www.pexels.com/photo/orange-backpack-840719/ */
-  background-size: cover;
   background-position: center 80%;
-  height: 50vh;
+  background-size: cover;
 }
 /* ------- Gallery page main img -------------*/
-#gallery-hero{
+.gallery-hero{
   background: url('img/Randaniel-min.jpg');
   /* https://c1.staticflickr.com/2/1689/25505901876_80320abe05_h.jpg */
-  background-size: cover;
   background-position: 0 40%;
-  height: 50vh;
+  background-size: cover;
+
 }
 /* ------- Contact page main img -------------*/
-#contact-hero{
+.contact-hero{
   background: url('img/people-waterfall-min.jpeg');
   /* https://www.pexels.com/photo/adventure-boy-girl-idyllic-450441/ */
-  background-size: cover;
   background-position: 0 center;
-  height: 50vh;
+  background-size: cover;
 }
-/* Holds the h1 and h2 for each page */
-#hero-overlay{
+
+.hero h1{
   text-align: right;
-  margin-right: 5%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  color: white;
+  font-weight: 100;
+  margin-right:3%;
   position: absolute;
   right:0;
   top: 9%;
-}
-/* Change alignment for Gallery page*/
-#gallery-hero #hero-overlay{
-  text-align: left;
-  margin-left: 5%;
-  position: absolute;
-  left:0;
-  top: 9%;
-}
-#hero-overlay h1,
-#hero-overlay h2{
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
-  color: white;
-  font-weight: 100;
-}
-#hero-overlay h1{
   font-size: 2rem;
-  line-height: 1.2em;
-  margin-bottom: 0;
 }
-#hero-overlay h2{
-  margin-top: 10px;
+.gallery-hero h1{
+    text-align: left;
+    margin-left: 5%;
+    right:auto;
+
 }
 main{
   margin: 10px auto;
@@ -138,20 +122,21 @@ figcaption span{
   padding-left: 10px;
 }
 footer{
-  background: rgba(55, 88, 111, 0.7);
-  color: white;
+  background: rgb(78, 115, 140);
   margin: 20px auto 0 auto;
+  padding: 3% 0;
   width: 100%;
-  padding: 20px 0;
 }
-footer small{
-  margin: 0 20px;
-  display: block;
+footer p{
+    text-align:center;
+    margin:auto 1%;
+    color:lightgrey;
+    line-height: 1.5em;
 }
 footer a{
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 /* ------ About page ------------------*/
 .event{
@@ -202,7 +187,6 @@ footer a{
 /* ------- Contact form ---------------*/
 form{
   margin: 20px auto;
-
 }
 form p{
   margin-bottom:5px;
@@ -217,6 +201,7 @@ input{
   font-size: 1em;
   border-radius: 4px;
   border:1px solid #ccc;
+  box-sizing: border-box;
 }
 textarea{
   min-height:100px;
@@ -226,6 +211,8 @@ textarea{
   border: 1px solid #ccc;
   border-radius: 4px;
   outline:none;
+  box-sizing: border-box;
+
 }
 input[type=file]{
   padding-left: 0px;
@@ -235,12 +222,12 @@ input[type=checkbox]{
   cursor: pointer;
 }
 input[type=submit]{
-  background: #fff;
-  cursor: pointer;
-	margin-top: 3%;
-	width:33%;
-	border-radius: 4px;
-  display: inline;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 3%;
+    width:33%;
+    border-radius: 4px;
+    display: inline;
 }
 /* Hide original ugly input file button */
 #hide{
@@ -279,64 +266,70 @@ _:-moz-tree-row(hover), #btn{
 
 
 @media only screen and (min-width: 700px) {
-  .topnav a {
-		display: block;
-	}
-	.topnav a.icon {
-		display: none;
-	}
-  #hero,
-  #about-hero,
-  #contact-hero,
-  #gallery-hero{
-    height: 70vh;
-  }
-  #hero-overlay h1{
-    top: 10%;
-    font-size: 3.5rem;
-  }
-  #hero-overlay{
-    margin-right:5%;
-  }
-  section{
-    float: left;
-    width: 48%;
-    padding-left: 4%;
-  }
-  section:first-of-type{
-    padding-left: 0;
-  }
-  #no-top-margin{
-    margin-top:0;
-  }
-  .clearfix::after{
-    content:" ";
-    clear: both;
-    display: table;
-  }
-  /* ------- About page --------------*/
-  .date{
-    margin-right:1%;
-  }
-  /* ------- Gallery page --------------*/
-  .flexbox div{
-    margin:1%;
-  }
-  /* ------- Contact page --------------*/
-  form{
-    width:70%;
-    margin: 10px auto;
-  }
+    .topnav{
+        text-align: center;
+    }
+    .topnav a {
+    	display: inline-grid;
+        grid-auto-flow: column;
+    }
+    .topnav a.icon {
+    	display: none;
+    }
+    .hero{
+        height: 80vh;
+        min-height: 500px;
+    }
+    .hero h1{
+        top: 10%;
+        font-size: 3.5rem;
+        margin-right:5%;
+    }
+    .gallery-hero h1{
+        margin-left:5%;
+    }
+    section{
+        float: left;
+        width: 48%;
+        padding-left: 4%;
+    }
+    section:first-of-type{
+        padding-left: 0;
+    }
+    #no-top-margin{
+        margin-top:0;
+    }
+    .clearfix::after{
+        content:" ";
+        clear: both;
+        display: table;
+    }
+    footer{
+        padding:2% 0;
+    }
+    /* ------- About page --------------*/
+    .date{
+        margin-right:1%;
+    }
+    /* ------- Gallery page --------------*/
+    .flexbox div{
+        margin:1%;
+    }
+    /* ------- Contact page --------------*/
+    form{
+        width:70%;
+        margin: 10px auto;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
 
-  form{
-    width:60%;
-    margin: 10px auto;
-  }
-  input[type=submit]{
-    width: 20%;
-  }
+    form{
+        width:60%;
+        margin: 10px auto;
+    }
+    input[type=submit]{
+        width: 20%;
+    }
 
 }
