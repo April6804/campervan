@@ -1,6 +1,6 @@
 
 body{
-  background: #f1f1f1;
+  background: #fafafa;
   margin:0;
   padding:0;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
@@ -138,6 +138,7 @@ footer a{
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
+
 /* ------ About page ------------------*/
 .event{
   border-bottom:1px solid #ccc;
