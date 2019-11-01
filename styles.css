@@ -49,9 +49,11 @@ a.active {
 img{
   max-width: 100%;
 }
-/* ------- ALL pages main img --------------*/
+/* ------- TODO ADD ALL pages main img --------------*/
 .hero{
     height: 50vh;
+
+/* -------- TODO ADD MIN HEIGHT TO ALL HEROS ------- */
     min-height: 400px;
 }
 /* ------- Index page main img --------------*/
@@ -83,7 +85,7 @@ img{
   background-position: 0 center;
   background-size: cover;
 }
-
+/* TODO add positioning */
 .hero h1{
   text-align: right;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
@@ -99,7 +101,6 @@ img{
     text-align: left;
     margin-left: 5%;
     right:auto;
-
 }
 main{
   margin: 10px auto;
@@ -251,14 +252,14 @@ input[type=submit]{
 _:-moz-tree-row(hover), #btn{
   width:102%;
 }
-/*
+
  .iphone #btn{
   width:96%;
   border: 1px solid black;
   border-radius: 15px;
   font-size: .9em;
   padding-top: 2px;
-} */
+} 
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
     text-align: center;
