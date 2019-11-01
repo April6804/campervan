@@ -2,7 +2,7 @@
 
 ## Description
 
-A website for a club of people who like to camp in campervans in Kentucky. Site shows popular campsites and pictures of different campervans. [https://april6804.github.io/campervan/](https://april6804.github.io/campervan/)
+A website for a club of people who like to camp in campervans in Kentucky. Site shows popular campsites and pictures of different campervans. [https://april6804.github.io/campervan](https://april6804.github.io/campervan)
 
 
 
@@ -28,10 +28,10 @@ The class(es) and ID(s) I created are:
 
 The javascript functions I created are:
 
-~~* openModal, closeModal, showSlides and other lightbox functions are on my app.js page. They display each image based on what image you clicked on with a dark background. Each image has a previous and next button to display other images.~~
+* ~~ openModal, closeModal, showSlides and other lightbox functions are on my app.js page. They display each image based on what image you clicked on with a dark background. Each image has a previous and next button to display other images.~~
 
 * Hamburger menu in nav appears on smaller screens with a drop down menu when clicked.
 
 * getFile and sub(obj) are also on the app.js file and allows my custom button to upload a file to be included in a contact form. Of course it is only for a demo and doesn't actually upload the image and send it anywhere.
 
-* if(navigator.userAgent.match(/iPhone/)) to add a class to the html on the Contact page to adjust the width on my custom btn. (IOS changed the styles)
+* If viewed on an iPhone then JS adds a class to the html on the Contact page to adjust the width of my custom btn.

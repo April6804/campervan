@@ -209,10 +209,10 @@ textarea{
   min-height:100px;
   width:100%;
   padding:2%;
-  font-size: 0.9em;
+  font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
-  outline:none;
+  /* outline:none; */
   box-sizing: border-box;
 
 }
@@ -229,7 +229,7 @@ input[type=submit]{
     margin-top: 3%;
     width:33%;
     border-radius: 4px;
-    display: inline;
+    /* display: inline; */
 }
 /* Hide original ugly input file button */
 #hide{
@@ -259,7 +259,7 @@ _:-moz-tree-row(hover), #btn{
   border-radius: 15px;
   font-size: .9em;
   padding-top: 2px;
-} 
+}
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
     text-align: center;
@@ -332,6 +332,8 @@ _:-moz-tree-row(hover), #btn{
     }
     input[type=submit]{
         width: 20%;
+        padding:1%;
+
     }
 
 }
