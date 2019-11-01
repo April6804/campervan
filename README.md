@@ -28,7 +28,7 @@ The class(es) and ID(s) I created are:
 
 The javascript functions I created are:
 
-* ~~ openModal, closeModal, showSlides and other lightbox functions are on my app.js page. They display each image based on what image you clicked on with a dark background. Each image has a previous and next button to display other images.~~
+* ~~openModal, closeModal, showSlides and other lightbox functions are on my app.js page. They display each image based on what image you clicked on with a dark background. Each image has a previous and next button to display other images.~~
 
 * Hamburger menu in nav appears on smaller screens with a drop down menu when clicked.
 
