@@ -25,30 +25,42 @@
     </div><!--hero-->
 
     <main class="clearfix">
-      <form action="thanks.html">
+        <form action="thanks.html">
             <h3>Contact Us</h3>
             <p> Message us with any questions, tell us about your favorite camping spots, or let us know if you want to host an event. <br>
             We love seeing everyone's setup as every campervan is unique, so send us a photo.</p>
+
             <br>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label>Name:
+            <input type="text" id="name" name="name" required></label>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label>Email:
+            <input type="email" id="email" name="email" required></label>
 
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
+            <label>Message:
+            <textarea id="message" required></textarea></label>
 
-            <!-- Custom upload file button, hiding standard file input -->
-            <div id="btn" class="cursor" onclick="getFile()">Click to upload a photo</div>
-            <div id="hide"><input id="upfile" type="file" value="upload" onchange="sub(this)"/></div>
+            <!-- TODO Custom upload file button to look more modern, hiding standard file input -->
+            <div id="btn" class="cursor" onclick="getFile()">
+              Click to upload a photo
+            </div>
 
+            <!-- TODO Hide this in the CSS-->
+            <div id="hide">
+              <input id="upfile" type="file" value="upload" onchange="sub(this)"/>
+            </div>
+
+            <!-- TODO Change input submit to button to look more modern on mobile -->
             <button type="submit" class="cursor" value="Submit">Submit</button>
-            <br>
-            <input type="checkbox" class="cursor" id="news" name="news" checked>
-            <label for="news">Recieve our newsletters</label>
 
-      </form>
+            <br>
+
+            <label>
+              <input type="checkbox" class="cursor" id="news" name="news" checked>
+              Receive our newsletters
+            </label>
+
+        </form>
     </main>
 
     <footer>

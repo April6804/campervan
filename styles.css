@@ -47,18 +47,20 @@ a.active {
 
 /* Make all images responsive */
 img{
-  max-width: 100%;
+  width: 100%;
+  /* CHANGED from max-width but insured images don't get out of hand by
+  adding max-width in main */
 }
-/* ------- TODO ADD ALL pages main img --------------*/
+
 .hero{
     height: 50vh;
-
 /* -------- TODO ADD MIN HEIGHT TO ALL HEROS ------- */
     min-height: 400px;
 }
 /* ------- Index page main img --------------*/
 .index-hero{
-  background: url('img/Alan-Caldwell-Pexels-min.jpg');
+    /* CHANGED to better hi-res photo */
+  background: url('img/Alan-Caldwell-Pexels-max.jpg');
   /* https://www.pexels.com/photo/automobile-campervan-camping-cars-587976/ */
   background-position: center 80%;
   background-size: cover;
@@ -105,6 +107,7 @@ img{
 main{
   margin: 10px auto;
   width: 90%;
+  max-width:1600px;
 }
 figure{
   margin: 0;
@@ -122,8 +125,10 @@ figcaption{
 figcaption span{
   padding-left: 10px;
 }
+/* CHANGED COLORS WITH HELP FROM:
+https://coolors.co/589eb7-45a99f-828c51-335145-1e352f */
 footer{
-  background: rgb(78, 115, 140);
+  background: #589EB7;
   margin: 20px auto 0 auto;
   padding: 3% 0;
   width: 100%;
@@ -131,7 +136,7 @@ footer{
 footer p{
     text-align:center;
     margin:auto 1%;
-    color:lightgrey;
+    color:white;
     line-height: 1.5em;
 }
 footer a{
@@ -194,12 +199,12 @@ form p{
   margin-bottom:5px;
 }
 label{
-  padding: 8px 0 10px 0;
-  display: inline-block;
+    display:inline;
 }
 input{
   width:100%;
   padding:1.7%;
+  margin:1.5% 0;
   font-size: 1em;
   border-radius: 4px;
   border:1px solid #ccc;
@@ -209,10 +214,10 @@ textarea{
   min-height:100px;
   width:100%;
   padding:2%;
+  margin:1.5% 0;
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
-  /* outline:none; */
   box-sizing: border-box;
 
 }
@@ -220,17 +225,22 @@ input[type=file]{
   padding-left: 0px;
 }
 input[type=checkbox]{
-  width:auto;
+  width: auto;
   cursor: pointer;
 }
+/* Submit Button */
 button{
-    background: #fff;
+    border: 1px solid #45A99F;
+    border-radius: 4px;
+    /* CHANGED COLORS WITH HELP FROM:
+    https://coolors.co/589eb7-45a99f-828c51-335145-1e352f */
+    background: #45A99F;
+    color:white;
     cursor: pointer;
     margin-top: 3%;
     padding:1.5%;
     min-width:200px;
     font-size: 1em;
-    border-radius: 4px;
     display: inline;
 }
 /* Hide original ugly input file button */
@@ -239,17 +249,19 @@ button{
   width:0px;
   overflow:hidden;
 }
+/* Photo upload Button */
 #btn{
   border: 1px solid #ccc;
   border-radius: 4px;
   background: #fff;
+  cursor: pointer;
   max-width:98%;
   display: inline-block;
   text-align: center;
   margin-top: 10px;
   padding:6px 15px;
   overflow-wrap: break-word;
-  cursor: pointer;
+
 }
 _:-moz-tree-row(hover), #btn{
   width:102%;

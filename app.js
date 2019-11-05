@@ -22,6 +22,6 @@ function sub(obj){
  }
 
 // For iphone: add a class on the html to target width of buttons on contact page.
-if(navigator.userAgent.match(/iPhone/)) {
-    $('html').addClass('iphone');
-}
+// if(navigator.userAgent.match(/iPhone/)) {
+//     $('html').addClass('iphone');
+// }
