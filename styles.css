@@ -212,22 +212,43 @@ input{
 }
 textarea{
   min-height:100px;
-  width:100%;
-  padding:2%;
-  margin:1.5% 0;
+  width: 100%;
+  padding: 2%;
+  margin: 1.5% 0;
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-
 }
 input[type=file]{
   padding-left: 0px;
 }
+/* Hide original ugly input file button */
+#hide{
+  height:0;
+  width: 0;
+  overflow: hidden;
+}
+/* Photo upload Button */
+#btn{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  max-width: 98%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 6px 15px;
+  overflow-wrap: break-word;
+}
+
 input[type=checkbox]{
   width: auto;
   cursor: pointer;
+  margin: auto;
 }
+
 /* Submit Button */
 button{
     border: 1px solid #45A99F;
@@ -238,42 +259,19 @@ button{
     color:white;
     cursor: pointer;
     margin-top: 3%;
-    padding:1.5%;
-    min-width:200px;
+    margin-bottom: 3%;
+    padding:2%;
+    width:100%;
     font-size: 1em;
     display: inline;
 }
-/* Hide original ugly input file button */
-#hide{
-  height:0px;
-  width:0px;
-  overflow:hidden;
-}
-/* Photo upload Button */
-#btn{
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #fff;
-  cursor: pointer;
-  max-width:98%;
-  display: inline-block;
-  text-align: center;
-  margin-top: 10px;
-  padding:6px 15px;
-  overflow-wrap: break-word;
 
-}
-_:-moz-tree-row(hover), #btn{
+/* _:-moz-tree-row(hover), #btn{
   width:102%;
-}
-/*
- .iphone #btn{
-  width:96%;
-  border: 1px solid black;
-  border-radius: 15px;
-  font-size: .9em;
-  padding-top: 2px;
 } */
+
+
+
 /* ------- Thanks / Submit page ---------------*/
 #thanks{
     text-align: center;
@@ -322,6 +320,7 @@ _:-moz-tree-row(hover), #btn{
     }
     footer{
         padding:2% 0;
+        font-size: 0.9em;
     }
     /* ------- About page --------------*/
     .date{
@@ -336,6 +335,13 @@ _:-moz-tree-row(hover), #btn{
         width:70%;
         margin: 10px auto;
     }
+    button{
+        min-width: 200px;
+        padding:1.7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -346,7 +352,7 @@ _:-moz-tree-row(hover), #btn{
     }
     button{
         width: 20%;
-        padding:1%;
+        padding: 1%;
 
     }
 
