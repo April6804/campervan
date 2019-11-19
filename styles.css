@@ -178,12 +178,11 @@ footer a{
   display: flex;
   flex-wrap:wrap;
   flex-direction: row;
-  width:95%;
   margin: 2% auto 0;
 }
 .flexbox div{
   margin:2%;
-  width:350px;
+  flex-basis:350px;
   flex-grow:1;
 }
 .flexbox img{
@@ -345,7 +344,9 @@ button{
 }
 
 @media only screen and (min-width: 1000px) {
-
+    .flexbox div{
+        flex-basis:450px;
+    }
     form{
         width:60%;
         margin: 10px auto;
@@ -356,4 +357,9 @@ button{
 
     }
 
+}
+@media only screen and (min-width: 1800px) {
+    .flexbox div{
+        flex-basis:30%;
+    }
 }
